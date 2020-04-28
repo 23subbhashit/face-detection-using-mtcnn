@@ -5,8 +5,8 @@ This is a fun project which deals with identifying the key features of your face
 
 ## Libraries used
 
-1. matplotlib
+>* matplotlib
 
-2.cv2
+>* cv2
 
-3.mtcnn
+>* mtcnn

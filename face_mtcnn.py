@@ -21,7 +21,7 @@ def draw_image_with_boxes(img, result_list):
 			dot = Circle(value, radius=2, color='red')
 			ax.add_patch(dot)
 	plt.show()
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while 1:
     _, img = cap.read()
@@ -29,7 +29,6 @@ while 1:
     detector = MTCNN()
     faces = detector.detect_faces(img)
     draw_image_with_boxes(img, faces)
-    cv2.imshow('img', img)
     k = cv2.waitKey(5) & 0xFF
     if k == 27:
         break

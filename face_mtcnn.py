@@ -29,9 +29,4 @@ while 1:
     detector = MTCNN()
     faces = detector.detect_faces(img)
     draw_image_with_boxes(img, faces)
-    k = cv2.waitKey(5) & 0xFF
-    if k == 27:
-        break
 
-cv2.destroyAllWindows()
-cap.release()
